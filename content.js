@@ -1,4 +1,13 @@
 $(document).ready(function(){
+  (function() {
+    var cx = '015596428375404504367:yeix2rhg1s8';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
   $('li > a').on('click', function(){
     $('.dates').empty();
     $('.text').empty();
